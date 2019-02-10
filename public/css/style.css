@@ -1,0 +1,114 @@
+
+body{
+    background-image: linear-gradient(45deg , #fce4cc, #ecddca, #c0d4d2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e3d5c8;
+ }
+.container{
+    width: 80%;
+    margin-top:80px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 0;
+}
+.headoftable{
+    width: 100%;
+    box-sizing: border-box;
+    /* padding-top: 40px; */
+    border-bottom: 1px solid #ddd;
+    /* padding-bottom: 30px; */
+    padding: 40px 2% 30px;
+    background-image: linear-gradient(to bottom, rgba(255,0,0,0), rgba(184, 195, 190, 0.18));
+
+}
+.col-1{
+    width: 80%;
+}
+.textinchis{
+    color: #88a7a5;
+}
+.textdeschis{
+    color:#b8b9c9;
+}
+.col-2{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 145px;
+    
+}
+.tasks{
+    width: 100%;
+    padding-bottom: 25px;
+}
+#buton{
+    background-color: #f0d6c5;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+.leftposition{
+    float: left;
+}
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+.container-table{
+    padding-top: 40px;
+}
+
+.idtask{
+    font-weight: bold;
+}
+.idtask::after{
+    content: ".";
+}
+.titlutask{
+    font-size: 18px;
+    width: 75%;
+}
+.evidentiat{
+    color: #c88f8f;
+}
+/* #color{
+    height:100%;
+    width: 1px;
+    background-color: white;
+} */
+.table>tbody>tr>td {
+    border-bottom: 1px solid #ddd;
+    vertical-align: middle;
+}
+.stillactive:hover{
+    background-color: rgba(223, 236, 231, 0.18);
+}
+.deadlinetask{
+    padding-top: 5px;
+    font-size: 12px;
+}
+.ingrosat{
+    font-weight: bold;
+}
+.operatii{
+  text-align: center;
+}
+.finish{
+    background-color: rgba(84, 227, 124, 0.336);
+}
+.content-formular{
+    width: 90%;
+    margin: 30px 2%;
+}
+.formular{
+    margin-top: 20px;
+}
+.date{
+    padding: 2px;
+}
