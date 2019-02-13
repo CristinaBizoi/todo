@@ -42,7 +42,7 @@
                             ?>
                         <h3 class="luna"> <?php echo $task_num; ?> Tasks </h3>
                     </div>
-                    <div id="buton" class="leftposition"><a href="./adaugare.php"><i class="fas fa-plus"></i></a></div>
+                    <a href="./adaugare.php" id="buton" class="leftposition"><i class="fas fa-plus"></i></a>
                 </div>
                 <div class="clearfix"></div>
             </div>

@@ -4,6 +4,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #e3d5c8;
+    height: 100vh;
+    width: 100vw;
+    float: left;
  }
 .container{
     width: 80%;
@@ -49,7 +52,10 @@ body{
     border-radius: 50%;
     text-align: center;
     color: white;
+    font-size: 30px;
+    padding-top: 17px;
 }
+
 .leftposition{
     float: left;
 }
