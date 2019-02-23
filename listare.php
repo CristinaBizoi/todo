@@ -22,17 +22,7 @@
     include ("./header.php");
 ?>      
 
-
-
-    <div class="container">
-            <div class="headoftable">
-                <div class="col-1 leftposition">
-                    <h1 class="textinchis"><?php echo date("l").",". date("jS"); ?></h1>
-                    <h3 class="textdeschis"><?php echo date("F"); ?> </h3>
-                </div>
-                <div class="col-2 leftposition">
-                    <div class="tasks textdeschis">
-                        <?php
+<?php
                         $task_num = 0;
                         foreach ($tasks as $key => $task){ 
                             if($task["checked"]==0){
@@ -40,7 +30,18 @@
                             }
                             }
                             ?>
-                        <h3 class="luna"> <?php echo $task_num; ?> Tasks </h3>
+
+    <div class="container">
+            <div class="headoftable">
+                <div class="col-1 leftposition">
+                    <h1 class="textinchis"><?php echo date("l").",". date("jS"); ?></h1>
+                    <h3 class="textdeschis"><?php echo date("F"); ?> </h3>
+                    <h3 class="hidden-date textdeschis"> <?php echo $task_num; ?> Tasks </h3>
+                </div>
+                <div class="col-2 leftposition">
+                    <div class="tasks textdeschis">
+                       
+                        <h3 class="luna hidden-task"> <?php echo $task_num; ?> Tasks </h3>
                     </div>
                     <a href="./adaugare.php" id="buton" class="leftposition"><i class="fas fa-plus"></i></a>
                 </div>
