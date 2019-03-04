@@ -76,7 +76,7 @@
                     <tr class="<?php echo $class; ?>">
                         <!-- <td id="color"></td> -->
                         <td class="idtask textinchis"><?php echo $task["id"]; ?></td>
-                        <td class="titlutask evidentiat"><?php echo $task["continut"]; ?>
+                        <td class="titlutask colorTask"><?php echo $task["continut"]; ?>
                         <div class="deadlinetask textdeschis"> <span class="ingrosat">Deadline:</span> <?php echo $task["deadline"]; ?> </div>
                         </td>
                         <td class="operatii">
