@@ -5,10 +5,11 @@ if (isset($_POST) && !empty($_POST)){
     $conection = connect();
     $query = "INSERT INTO `task` 
     SET `continut` = '".$_POST["text"]."',
-        `deadline` = '".$_POST["deadline"]."'";
+        `deadline` = '".$_POST["deadline"]."',
+        `priority` = '".$_POST["priority"]."'";
     echo $query;
     $result = aplicaquery($conection, $query);
-    header("Location:./listare.php");
+    header("Location:./index.php");
     $close =  closedb ($conection);
 }
 include("./header.php");
@@ -25,7 +26,15 @@ include("./header.php");
                 </div>
                 <div class="form-group">
                     <label for="deadline" class="textinchis">Deadline</label>
-                    <input type="text" class="form-control" id="deadline"  name="deadline" placeholder=" wtv">
+                    <input type="text" class="form-control" id="deadline"  name="deadline" placeholder=" y-m-d">
+                </div>
+                <div class="form-group">
+                    <label for="priority" class="textinchis">Prioritate</label>
+                    <select name="priority" id="priority" class="form-control">
+                      <option value="0">scazuta </option>
+                      <option value="1">medie </option>
+                      <option value="2">ridicata </option>
+                    </select>
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>

@@ -110,6 +110,9 @@ body{
     color: white;
 
 }
+.finish .textdeschis, .finish .idtask{
+    color: white;
+}
 .content-formular{
     width: 90%;
     margin: 30px 2%;

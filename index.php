@@ -4,10 +4,10 @@
     if ($conection){
         // echo "merge";
     }
-    $query = "SELECT  `task`.`id`, `task`.`continut`, `task`.`deadline`, `task`.`checked`
+    $query = "SELECT  `task`.`id`, `task`.`continut`, `task`.`deadline`, `task`.`checked`, `task`.`priority`
      FROM  `task` 
      WHERE 1
-     ORDER BY `checked` asc";
+     ORDER BY `checked` asc, `priority` desc, `deadline` asc";
     // echo $query;
     $result = aplicaquery($conection, $query);
     // echo $result;
@@ -75,7 +75,7 @@
                     ?>
                     <tr class="<?php echo $class; ?>">
                         <!-- <td id="color"></td> -->
-                        <td class="idtask textinchis"><?php echo $task["id"]; ?></td>
+                        <td class="idtask textinchis"><?php echo $task["priority"]; ?></td>
                         <td class="titlutask colorTask"><?php echo $task["continut"]; ?>
                         <div class="deadlinetask textdeschis"> <span class="ingrosat">Deadline:</span> <?php echo $task["deadline"]; ?> </div>
                         </td>
