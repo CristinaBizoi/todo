@@ -75,7 +75,12 @@
                     ?>
                     <tr class="<?php echo $class; ?>">
                         <!-- <td id="color"></td> -->
-                        <td class="idtask textinchis"><?php echo $task["priority"]; ?></td>
+                        <td class="idtask textinchis">
+                            <div> <?php for($i=0; $i<=$task["priority"]; $i++){
+                                ?><span class="stick stick-<?php echo $i; ?>"> </span>
+                            <?php } ?> </div>
+
+                        </td>
                         <td class="titlutask colorTask"><?php echo $task["continut"]; ?>
                         <div class="deadlinetask textdeschis"> <span class="ingrosat">Deadline:</span> <?php echo $task["deadline"]; ?> </div>
                         </td>

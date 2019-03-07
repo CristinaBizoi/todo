@@ -72,9 +72,7 @@ body{
 
 .idtask{
     font-weight: bold;
-}
-.idtask::after{
-    content: ".";
+    position: relative;
 }
 .titlutask{
     font-size: 18px;
@@ -126,6 +124,31 @@ body{
 .hidden-date{
     display:none;
   }
+/* priority pictogram */
+.stick{
+    display: block;
+    width: 3px;
+    background-color: blue;
+    /* margin-right: 3px; */
+    position: absolute;
+    bottom: 0;
+    float: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    
+}
+.stick-0{
+    height: 7px;
+    left: 10px;
+}
+.stick-1{
+    height: 10px;
+    left: 15px;
+}
+.stick-2{
+    height: 14px;
+    left: 20px;
+}
 @media only screen and (max-width: 425px) {
     .hidden-date{
       display:block;
