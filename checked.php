@@ -18,7 +18,7 @@ if($status == 0){
     $rezultat1 = aplicaquery($con, $query1);
     if(mysqli_affected_rows($con) > 0){
         $mesaj = "Task-ul a fost rezolvat";
-        header("Location:./listare.php?mesaj=$mesaj");
+        header("Location:./index.php?mesaj=$mesaj");
         exit();
     }
 

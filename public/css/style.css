@@ -111,6 +111,9 @@ body{
 .finish .textdeschis, .finish .idtask{
     color: white;
 }
+.finish .colorTask{
+    color: #2A5692;
+}
 .content-formular{
     width: 90%;
     margin: 30px 2%;
