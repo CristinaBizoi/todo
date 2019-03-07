@@ -9,6 +9,6 @@
     $query = "DELETE FROM `task` 
         WHERE `id` ='".$_GET["id"]."'";
     $result = aplicaquery($conection, $query);
-    header("Location:./listare.php");
+    header("Location:./index.php");
     exit();
 ?>
