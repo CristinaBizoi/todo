@@ -75,8 +75,8 @@
                     ?>
                     <tr class="<?php echo $class; ?>">
                         <!-- <td id="color"></td> -->
-                        <td class="idtask textinchis">
-                            <div> <?php for($i=0; $i<=$task["priority"]; $i++){
+                        <td id="idtask">
+                            <div class="importanta-task pl-1"> <?php for($i=0; $i<=$task["priority"]; $i++){
                                 ?><span class="stick stick-<?php echo $i; ?>"> </span>
                             <?php } ?> </div>
 
