@@ -17,7 +17,7 @@ include("./header.php");
 
     <div class="container">
       <div class="content-formular">
-        <h1 class="textinchis">Adauga task</h1>
+        <h1 class="textinchis">Adaugare task</h1>
         <div class="formular">
           <form action="./adaugare.php" method="post">
                 <div class="form-group">
